@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+    <title>Portfolio Website</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://kit.fontawesome.com/dbef1dead3.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+
+   <body>
+
+
+      <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                   <li><a href="#header">Home</a></li> 
+                   <li><a href="#about">About</a></li> 
+                   <li><a href="#portfolio">Portfolio</a></li> 
+                   <li><a href="#contact">Contact</a></li> 
+                   <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Front-end Programmer</p>
+                <h1>Hi, My name is Amir</h1>
+            </div>
+        </div>
+      </div>
+
+      <!-----------about--------------------------------------->
+
+      <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="pictures/random3.jpeg">
+                </div>
+                 <div class="col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                         when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                          It has survived not only five centuries, but also the leap into electronic typesetting,
+                           remaining essentially unchanged. 
+                          It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                           and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                    </p>
+
+
+                         <div class="tab-titles">
+                            <p class="sub-names active-names" onclick="opentab('skills')">Skills</p>
+                            <p class="sub-names" onclick="opentab('education')">Education</p>
+                         </div>  
+
+                         <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>React JS</li>
+                                <li>Version Control</li>
+                            </ul>
+                         </div>
+
+                         <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022-2026</span><br>Honours bachelor of Computer Science</li>
+                            </ul>
+                         </div>
+
+                 </div>
+            </div>
+        </div>
+      </div>
+
+
+
+      <!-----------------------services---------------------------------------->
+
+           <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Service</h1>
+                <div class="service-list">
+
+                    <div>
+                        <h2>Front-end</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+ 
+                    <div>
+                        <h2>Front-end</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+
+                    <div>
+                        <h2>Front-end</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+
+                </div>
+            </div>
+           </div>
+
+
+
+<!---------------------------------------portfolio---------------->
+
+<div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+
+            <div class="work">
+                <img src="pictures/phoneee.jpg"> 
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>This is the best app that exist in the world</p>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="pictures/laptop.jpeg">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>This is the best app that exist in the world</p>
+               </div>
+          </div>
+
+            <div class="work">
+                <img src="pictures/website.jpg">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>This is the best app that exist in the world</p>
+                </div>
+            </div>
+
+        </div>
+
+       
+    </div>
+    
+
+<a href="#" class="btn">See More</a>
+
+
+
+<!---------------------------------------Contact-------------------->
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>amirhosein279279@gmail.com</p>
+                <p>+1 (416) 930 0508</p>
+                <div class="social-icons">
+                </div>
+                <a href="Resume.pdf" class="btn btn2" download="Resume.pdf" >Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="Email" placeholder="Your Email " required>
+                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright &#169 Amir.</p>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("sub-names");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (var i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active-names");
+        }
+        for (var i = 0; i < tabcontents.length; i++) {
+            tabcontents[i].classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-names");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+
+<script>
+
+   var sidemenu = document.getElementById("sidemenu");
+
+   function openmenu() {
+    sidemenu.style.right="0";
+   }
+
+   function closemenu() {
+    sidemenu.style.right="-200px";
+   }
+
+
+
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyammMegS_2s3ietT6W8ZHiPXF2cLoONWgLZoeGwBDsrZ6Ya306U2IB8Ij310zUHsKFSg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+   </body>
+
+</html>
